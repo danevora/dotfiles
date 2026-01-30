@@ -1,0 +1,95 @@
+# Claude - sensitive/machine-specific
+claude/history.jsonl
+claude/projects/
+claude/cache/
+claude/debug/
+claude/statsig/
+claude/stats-cache.json
+claude/session-env/
+claude/shell-snapshots/
+claude/ide/
+claude/file-history/
+claude/tasks/
+claude/todos/
+claude/plans/
+claude/settings.local.json
+
+# Zsh
+zsh/.zsh_history
+zsh/.zsh_sessions/
+zsh/.zcompdump*
+
+# Bash
+bash/.bash_history
+.bash_history
+
+# SSH - never commit keys
+ssh/id_*
+ssh/*.pem
+ssh/*.key
+ssh/known_hosts
+ssh/authorized_keys
+
+# GPG
+gnupg/*.gpg
+gnupg/private-keys*
+gnupg/random_seed
+gnupg/.gpg-*
+
+# AWS
+aws/credentials
+aws/sso/cache/
+
+# Git - machine-specific
+git/.gitconfig.local
+git/credentials
+
+# Vim/Neovim
+vim/.vim/undodir/
+vim/.vim/swap/
+vim/.vim/backup/
+vim/.vim/plugged/
+nvim/plugin/
+nvim/lazy-lock.json
+
+# VS Code
+vscode/globalStorage/
+vscode/workspaceStorage/
+vscode/History/
+vscode/User/settings.json.local
+
+# Tmux
+tmux/plugins/
+tmux/resurrect/
+
+# npm/node
+npm/.npm/
+npm/.npmrc
+
+# Python
+python/.python_history
+python/__pycache__/
+
+# Ruby
+ruby/.gem/
+ruby/.bundle/
+
+# Homebrew
+Brewfile.lock.json
+
+# OS
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# Secrets - never commit
+*.pem
+*.key
+*.p12
+.env
+.env.*
+**/secrets/
+**/credentials/
