@@ -12,18 +12,14 @@ cd ~/Code/dotfiles
 
 ```
 dotfiles/
-├── claude/          # Claude Code config (~/.claude)
-└── install.sh       # Symlink installer
+├── claude/          # ~/.claude
+├── git/             # ~/.gitconfig
+└── install.sh
 ```
 
 ## Adding configs
 
-1. Move config to appropriate folder in this repo
-2. Add symlink logic to `install.sh`
-3. Commit and push
-
-## Manual linking
-
-```bash
-ln -s ~/Code/dotfiles/claude ~/.claude
-```
+1. Create folder: `dotfiles/<tool>/`
+2. Add config files inside
+3. Add symlink logic to `install.sh`
+4. Commit and push
