@@ -37,5 +37,8 @@ echo ""
 # Claude
 [ -d "$DOTFILES/claude" ] && link "$DOTFILES/claude" "$HOME/.claude"
 
+# Git
+[ -f "$DOTFILES/git/.gitconfig" ] && link "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
+
 echo ""
 info "Done!"
