@@ -37,41 +37,5 @@ echo ""
 # Claude
 [ -d "$DOTFILES/claude" ] && link "$DOTFILES/claude" "$HOME/.claude"
 
-# Zsh
-[ -f "$DOTFILES/zsh/.zshrc" ] && link "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
-[ -f "$DOTFILES/zsh/.zshenv" ] && link "$DOTFILES/zsh/.zshenv" "$HOME/.zshenv"
-
-# Bash
-[ -f "$DOTFILES/bash/.bashrc" ] && link "$DOTFILES/bash/.bashrc" "$HOME/.bashrc"
-[ -f "$DOTFILES/bash/.bash_profile" ] && link "$DOTFILES/bash/.bash_profile" "$HOME/.bash_profile"
-
-# Git
-[ -f "$DOTFILES/git/.gitconfig" ] && link "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
-[ -f "$DOTFILES/git/.gitignore_global" ] && link "$DOTFILES/git/.gitignore_global" "$HOME/.gitignore_global"
-
-# Vim
-[ -f "$DOTFILES/vim/.vimrc" ] && link "$DOTFILES/vim/.vimrc" "$HOME/.vimrc"
-[ -d "$DOTFILES/vim/.vim" ] && link "$DOTFILES/vim/.vim" "$HOME/.vim"
-
-# Neovim
-[ -d "$DOTFILES/nvim" ] && link "$DOTFILES/nvim" "$HOME/.config/nvim"
-
-# Tmux
-[ -f "$DOTFILES/tmux/.tmux.conf" ] && link "$DOTFILES/tmux/.tmux.conf" "$HOME/.tmux.conf"
-
-# SSH config (not keys)
-[ -f "$DOTFILES/ssh/config" ] && link "$DOTFILES/ssh/config" "$HOME/.ssh/config"
-
-# VS Code
-if [ -d "$DOTFILES/vscode" ]; then
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        VSCODE_DIR="$HOME/Library/Application Support/Code/User"
-    else
-        VSCODE_DIR="$HOME/.config/Code/User"
-    fi
-    [ -f "$DOTFILES/vscode/settings.json" ] && link "$DOTFILES/vscode/settings.json" "$VSCODE_DIR/settings.json"
-    [ -f "$DOTFILES/vscode/keybindings.json" ] && link "$DOTFILES/vscode/keybindings.json" "$VSCODE_DIR/keybindings.json"
-fi
-
 echo ""
 info "Done!"
