@@ -13,6 +13,7 @@ claude/tasks/
 claude/todos/
 claude/plans/
 claude/settings.local.json
+claude/.credentials.json
 
 # Zsh
 zsh/.zsh_history

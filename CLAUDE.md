@@ -19,7 +19,8 @@ Examples:
 2. Add config files inside
 3. Add symlink logic to `install.sh`
 4. Update `.gitignore` if needed (for sensitive/machine-specific files)
-5. Commit and push
+5. Check if `README.md` structure section needs updating
+6. Commit and push
 
 ## Cross-Platform
 

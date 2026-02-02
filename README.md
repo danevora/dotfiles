@@ -12,8 +12,10 @@ cd ~/Code/dotfiles
 
 ```
 dotfiles/
+├── bash/            # ~/.bashrc (Linux/WSL)
 ├── claude/          # ~/.claude
 ├── git/             # ~/.gitconfig
+├── zsh/             # ~/.zshrc (macOS)
 └── install.sh
 ```
 
