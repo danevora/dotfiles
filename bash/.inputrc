@@ -1,0 +1,5 @@
+# Case-insensitive completion
+set completion-ignore-case on
+
+# Show all matches if ambiguous
+set show-all-if-ambiguous on

@@ -6,11 +6,11 @@
 
 Structure: `dotfiles/<tool>/` → `~/.<tool>/` or `~/.config/<tool>/`
 
-If the target is a single file (like `~/.gitconfig`), still keep it in a folder in this repo (`git/.gitconfig`) but symlink the file directly since that's what the system expects.
+If the target is a single file (like `~/.bashrc`), still keep it in a folder in this repo (`bash/.bashrc`) but symlink the file directly since that's what the system expects.
 
 Examples:
 - `dotfiles/claude/` → `~/.claude/` (folder)
-- `dotfiles/git/.gitconfig` → `~/.gitconfig` (file, because that's the expected location)
+- `dotfiles/bash/.bashrc` → `~/.bashrc` (file, because that's the expected location)
 - `dotfiles/nvim/` → `~/.config/nvim/` (folder)
 
 ## Adding New Configs
