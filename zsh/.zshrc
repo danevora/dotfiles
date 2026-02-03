@@ -30,15 +30,15 @@ parse_git_branch() {
 }
 
 parse_git_status() {
-    local status=""
+    local indicators=""
     local git_status=$(git status --porcelain 2>/dev/null)
     if [[ -n "$git_status" ]]; then
-        status="*"
+        indicators="*"
     fi
     if git log --oneline @{upstream}.. 2>/dev/null | grep -q .; then
-        status="${status}↑"
+        indicators="${indicators}↑"
     fi
-    echo "$status"
+    echo "$indicators"
 }
 
 # ─────────────────────────────────────────────────────────────
